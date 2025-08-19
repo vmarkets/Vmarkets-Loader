@@ -2,25 +2,37 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Loader</title>
+  <title>BO6/WZ/autre</title>
+  <!-- Import Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #0a0a0a;
-      color: cyan;
-      font-family: Arial, sans-serif;
-      text-align: center;
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-align: center;
+      background: #111; /* noir plus clair */
     }
     h1 {
-      color: #00ffff;
+      color: red;
       font-size: 3em;
       margin-top: 40px;
+      text-shadow: 0 0 15px black;
     }
     h2 {
-      color: #ff8c00;
+      color: red;
       font-size: 2em;
       margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      text-shadow: 0 0 10px black;
+    }
+    h2 img {
+      width: 50px;
+      height: 50px;
     }
     .menu {
       display: grid;
@@ -28,37 +40,38 @@
       gap: 20px;
       justify-content: center;
       max-width: 700px;
-      margin: 0 auto;
+      margin: 0 auto 50px;
     }
     .btn {
-      border: 2px solid cyan;
+      border: 2px solid red;
+      background: red;
       padding: 15px;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
-      color: cyan;
-      font-weight: bold;
+      color: white;
+      font-weight: 600;
       font-size: 1.2em;
       transition: 0.3s;
       display: block;
+      box-shadow: 0 0 8px black;
     }
     .btn:hover {
-      background: cyan;
-      color: black;
-      box-shadow: 0 0 15px cyan, 0 0 30px cyan;
+      background: darkred;
+      border-color: darkred;
+      box-shadow: 0 0 15px red, 0 0 30px red;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
   <h1>VMKT Loader</h1>
-  <h2>Loader</h2>
+  <h2><img src="logo.png" alt="logo"> BO6/WZ/autre</h2>
 
   <div class="menu">
     <a href="lien1.exe" class="btn">Programme 1</a>
     <a href="lien2.zip" class="btn">Programme 2</a>
     <a href="lien3.pdf" class="btn">Documentation</a>
-    <a href="lien4.html" class="btn">Outil Web</a>
-    <a href="lien5.png" class="btn">Image</a>
-    <a href="lien6.mp4" class="btn">Vidéo</a>
+    <a href="lien4.html" class="btn">Autre Outil</a>
   </div>
 </body>
 </html>
